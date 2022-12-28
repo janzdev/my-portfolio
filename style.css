@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root{
+     --light-green: #12ABA4;
+     --green: #038B85;
+     --white: #fff;
+     --light-white: #aaa;
+     --black: #3d3d3d;
+     --light-bg: #4b4b4b;
+     --dark-bg: #0F1829;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: none;
+     border: none;
+     text-decoration: none;
+     font-family: 'Poppins', sans-serif;
+     transition: .2s linear ;
+     /* text-transform: capitalize; */
+}
+*::selection{
+     background-color: var(--white);
+     color: var(--black);
+}
+html{
+     font-size: 62.5%;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+     scroll-padding-top: 8rem;
+}
+::-webkit-scrollbar{
+     height: .5rem;
+     width: 1rem;   
+}
+::-webkit-scrollbar-track{
+     background-color: transparent;   
+}
+::-webkit-scrollbar-thumb{
+     background-color: var(--green);
+     border-radius: 5rem;   
+}
+body{
+     background-color: var(--dark-bg);
+}
+section{
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 2rem;
+}
+.header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1000;
+     background-color: var(--dark-bg);
+}
+.header .flex{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.header .flex .logo{
+     font-size: 2.5rem;
+     color: var(--white);
+ }
+.header .flex .logo span{
+     color: var(--light-green);
+ }
+ .header .flex .navbar{
+     display: flex;
+     align-items: center;
+ }
+ .header .flex .navbar button{
+     padding: .5rem 1rem;
+     border-radius: 5px;
+     background-color: var(--light-green);
+     cursor: pointer;
+ }
+ .header .flex .navbar  a button{  
+     color:  var(--white);
+     font-size: 2rem;
+}
+.header .flex .navbar a button:hover{
+    color:  var(--white);
+    background-color: #038B85;
+}
+.header .flex .navbar a i{
+     margin-right: 2rem;
+     font-size: 3rem;
+    color: var(--white);
+}
+.home{
+     margin-top: 6rem;
+}
+.home .row{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+}
+
+.home .row .content{
+     margin-top: 3rem;
+     text-align: center;
+     
+}
+
+.home .row .content h3{
+     margin-bottom: 1rem;
+     font-size: 3.5rem;
+     color: var(--green);
+}
+.home .row .content h4{
+     margin-bottom: 1rem;
+     font-size: 2rem;
+     color: var(--light-white);
+}
+.home .row .content p{
+     font-size: 1.5rem;
+     color: var(--light-white);
+}
+.home .row .content .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 0.5rem;
+}
+.home .row .content .icon-container a{
+    font-size: 3rem;
+    margin: 1.5rem;
+    color: var(--light-white);
+}
+
+.home .row .image{
+   width: 250px;
+}
+.home .row .image img{
+   width: 100%;
+}
+
+
+
+.about{
+     margin-top: 6rem;
+}
+.about .row{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+}
+
+.about .row .content{
+     flex: 1 1 40rem;
+    
+     
+}
+.about .row .image{
+     flex: 1 1 40rem;
+}
+.about .row .image img{
+     width: 90%;
+}
+.about .row .content h3{
+     margin-bottom: 1rem;
+     font-size: 5rem;
+     color: var(--green);
+}
+.about .row .content p{
+     font-size: 1.5rem;
+     color: var(--light-white);
+}
+
+.project{
+     margin-top: 6rem;
+     height: 100vh;
+     
+}
+.project h3{
+     font-size: 4rem;
+     text-align: center;
+     color: var(--green);
+     margin-bottom: 1rem;
+}
+.project .cards{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 1.5rem;
+}
+.project .cards .card{
+    height: 170px;
+    width: 200px;
+    border-radius: 8px;
+   
+    
+}
+.project .cards .card img{
+    height: 100%;
+}
