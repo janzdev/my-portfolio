@@ -70,7 +70,7 @@
 
                     <div class="content">
                          <h3>About Me</h3>
-                         <p>Freelancer providing services for programming and design content needs.<br> Join me down below and let’s get cracking!</p>
+                         <p>I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web applications or websites!</p>
                     </div>
 
                     <div class="image">
@@ -88,26 +88,26 @@
 
                <h3>My Projects</h3>
 
-               <div class="cards">
+               <div class="card-container">
 
-                   
-                         <a href="#" class="card">
-                              <img src="img/explore-santa-fe.png" alt="">
+                   <div class="card">
+                         <a href="#">
+                              <img src="img/explore-santa-fe.png" alt="santa fe">
                          </a>
-                   
+                   </div>
 
-                   
-                         <a href="#" class="card">
-                              <img src="img/portfolio2.png" alt="">
+                   <div class="card">
+                         <a href="#">
+                              <img src="img/portfolio2.png" alt="santa fe">
                          </a>
-                   
+                   </div>
 
-                    
-                         <a href="#" class="card">
-                              <img src="img/portfolio1.png" alt="">
+                   <div class="card">
+                         <a href="#">
+                              <img src="img/portfolio1.png" alt="santa fe">
                          </a>
-
-                         
+                   </div>
+                          
                </div>
 
           </section>
@@ -118,16 +118,23 @@
 
           <section class="contact" id="contact">
 
+               <h1 class="heading">Contact</h1>
+
                <div class="row">
 
-                    <div class="images">
-                         <img src="" alt="">
+                    <div class="image">
+                         <img src="img/undraw_contact_us_re_4qqt.svg" alt="contact image">
                     </div>
 
-                    <div class="form">
-                         <label for="">Username</label>
-                         <input type="text" name="" id="">
-                    </div>
+                    <form action="">
+                         <span>Name</span>
+                         <input class="box" type="text" placeholder="Please enter your full name" maxlength="50" >
+                         <span>Email</span>
+                         <input class="box" type="text" placeholder="Please enter your email" maxlength="50" >
+                         <span>Number</span>
+                         <input class="box" type="number" placeholder="Please enter your number" max="999999999" min="0" onkeypress="if(this.value.length == 10) return false;">
+                         <input class="box btn" type="submit" value="Send">
+                    </form>
 
                </div>
 

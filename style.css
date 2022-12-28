@@ -181,27 +181,70 @@ section{
 
 .project{
      margin-top: 6rem;
-     height: 100vh;
+     
      
 }
 .project h3{
      font-size: 4rem;
      text-align: center;
      color: var(--green);
-     margin-bottom: 1rem;
+     margin-bottom: 5rem;
 }
-.project .cards{
+.project .card-container{
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-     gap: 1.5rem;
+     grid-template-columns: repeat(auto-fit, 33rem);
+     gap: 2rem;
+     align-items: flex-start;
+     justify-content: center;
 }
-.project .cards .card{
-    height: 170px;
-    width: 200px;
-    border-radius: 8px;
-   
-    
+.project .card-container .card img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
 }
-.project .cards .card img{
-    height: 100%;
+.contact{
+     margin-top: 6rem;
+}
+.contact .heading{
+     font-size: 4rem;
+     text-align: center;
+     color: var(--green);
+     margin-bottom: 5rem;
+}
+.contact .row{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 2rem;
+}
+.contact .row .image{
+     flex:  1 1 50rem;
+}
+.contact .row .image img{
+     width: 100%;
+}
+.contact .row form{
+     flex:  1 1 30rem;
+     border: 1px solid var(--light-white);
+     padding: 2rem 1rem;
+}
+.contact .row form span{
+     font-size: 1.5rem;
+     color: var(--light-white);
+}
+.contact .row form .box{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+.contact .row form .btn{
+     
+     background-color: var(--light-green);
+    color: var(--white);
+}
+.contact .row form .btn:hover{
+     background-color: var(--green);
+    color: var(--white);
 }
